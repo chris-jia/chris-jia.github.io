@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* 盒子模型 */
+}
+
+body{
+    background-color: #f7f7f7; /* 常用背景色 */
+    color:#2b3f55;/* 常用字体色 */
+    font-size: 0.8em; /* 系统缩比字体 */
+    font-family: sans-serif;
+}
+.container{
+    min-width: 1080px;
+}
+.header{
+    background-color:white;
+    /* 坍塌问题 */
+    overflow: hidden;
+}
+.info{
+
+    width: 800px;
+    margin: 0px auto;
+    padding:50px 0;
+}
+
+.info h1{
+    margin-bottom:20px;
+    font-weight: bolder;
+}
+.info p{
+    margin:10px 0 10px;
+    font-weight: bold;
+}
+.info {
+    margin-top:20px;
+}
+.links{
+    margin-top: 20px;
+}
+.links img{
+    margin-right: 5px;
+}
+
+.introduce-container li{
+    list-style: none;
+    /* 去点 */
+    margin-top:10px;
+}
+.introduce-container{
+    width: 800px;
+    display: flex;
+    justify-content:space-between; /* 常用排版方式 */
+    flex: row;
+    margin: 70px auto 0px;
+}
+
+.introduce{
+    width: 200px;
+}
+.introduce img{
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+.projects h2{
+    width: 800px;
+    margin:0px auto 20px;
+
+}
+.projects{
+    width: 800px;
+    display: flex;
+    justify-content:space-between; /* 常用排版方式 */
+    flex: row;
+    flex-wrap: wrap;
+    margin: 70px auto 0px; 
+}
+.project{
+    width:380px;
+    background-color: white;
+    padding:15px;
+    margin-bottom:20px;
+    box-shadow:1px 1px 1px rgba(0，0, 0, 0.07);/* 盒子阴影 */
+}
+.projects img{
+    margin-right:5px;
+    vertical-align:bottom;
+}
+.project p{
+    line-height: 20px;/* 行距 */
+}
+.project span{
+    padding: 10px;
+}
+
+.triangle{
+    position: absolute;
+    width: 100px;
+    animation-name: triangle;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function:linear;
+    opacity: .5;
+
+
+}
+@keyframes triangle{
+    from{
+        transform: translate(-50px,-50px) rotate(0);
+    }
+    to{
+        transform: translate(700px,400px) rotate(360deg);
+    }
+}
+
+.circle{
+    position: absolute;
+    width: 64px;
+    opacity: .5;
+    animation-name: circle; 
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes circle{
+    from{
+        transform: translate(750px,600px);
+    }
+    to{
+        transform: translate(750px,-64px);
+    }
+}
+
+@media (max-width: 700px){
+    .info{
+        width: 90%;
+    }
+
+}
