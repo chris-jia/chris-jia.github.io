@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Game Mole</title>
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+</head>
+<body>
+  <div id="container" class="container">
+    <div class="intro">
+      <button class="button button-pill" @click="isIntro">游戏说明</button>
+      <p v-show="intro">
+          单击开始，开始游戏。<br>
+          当鼹鼠出现时用鼠标单击击退它，<br>
+          得一分。鼹鼠数目多于四个时，游戏结束。<br>
+      </p>
+    </div>
+    
+    <div class="title">
+        <h1 class="game-title">Mole</h1>
+        <button class="button button-3d button-action button-pill" @click="start">Start</button>
+        <h2>score:{{score}}</h2>
+    </div>
+
+    <div class="content">
+      <div class="mole-game" v-for="i in 9" v-bind:class="{'mole-start':each_status[i]}" @click="hit(i)">
+      </div>
+    </div>
+
+  </div>  
+  <script src="js/vue.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

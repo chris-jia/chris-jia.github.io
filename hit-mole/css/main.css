@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding:0px;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    border-width: 0px;
+}
+
+body{
+    min-width: 1160px;
+    background-color: #fff;
+}
+
+.container{
+    width: 1080px;
+    margin: 50px auto 0 ;
+}
+
+.title{
+    
+    width: 100px;
+    margin: 0 auto 0;
+}
+.title h1{
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 10px; 
+}
+.title h2{
+    width: 100px;
+    margin: 15px 0 0 8px;
+    text-align: center;
+
+}
+
+
+.content{
+    width: 610px;
+    height: 910px;
+    margin: 30px auto 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    /* 折行间隙 */
+}
+.mole-game{
+    width: 200px;
+    height: 200px;
+    background-color:#905a3d;
+    border:1px dashed #000;
+    
+}
+
+.mole-start{
+    background-image: url("../material/mole.png");
+}
