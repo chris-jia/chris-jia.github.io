@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* 盒子模型 */
+}
+
+.title{
+    width: 1080px;
+    margin: 30px auto 30px;
+    vertical-align: middle;
+}
+
+.title img{
+    width:30px;
+    margin-left: 10px;
+}
+
+.title span{
+    font-size: 26px;
+    margin-left: 26px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container{
+    width: 1080px;
+    margin: 0 auto 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mycard{
+    width: 300px;
+    margin: 10px;
+    background: #FFFFFF;
+    border-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #636969;
+    display: flex;
+}
+
+.attri{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.offend,.defend{
+    margin-top: 10px;
+}
+
+.attri span{
+  
+    float: top;
+}

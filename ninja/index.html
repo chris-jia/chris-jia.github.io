@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Ninja</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="../lib/css/button.css">
+</head>
+
+<body>
+  <div id="ninja" >
+    <div class="title">
+      <img src="material/dollar-sign.png"  alt="">
+      <span>{{dollar}}</span>
+      <button class="button button-raised button-pill button-inverse"
+        @click="add" 
+      >新增角色</button>
+      <button class="button button-raised button-pill button-inverse"
+        @click="addMoney"
+      >膜大佬</button>
+    </div>
+
+    <div class="container">
+      <my-card class="container"
+        v-for="role in ninja"
+        :role="role"      
+      ></my-card>
+    </div>
+  </div>
+
+  <script src="../lib/js/vue.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
