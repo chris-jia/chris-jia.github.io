@@ -85,13 +85,16 @@ body{
 }
 .projects img{
     margin-right:5px;
+    margin-bottom: 10px;
     vertical-align:bottom;
 }
 .project p{
     line-height: 20px;/* 行距 */
+    margin-bottom: 10px;
 }
 .project span{
     padding: 10px;
+   
 }
 
 .triangle{
